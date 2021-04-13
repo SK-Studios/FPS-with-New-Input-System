@@ -682,6 +682,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   hitEffect: {fileID: 100002, guid: 99c73c92ac40473459640b165473206f, type: 3}
+--- !u!1 &1562906107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1562906108}
+  m_Layer: 0
+  m_Name: Muzzle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1562906108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562906107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.138, z: 0.426}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2356566407112897678}
+  m_RootOrder: 48
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1719983633
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,6 +724,7 @@ GameObject:
   - component: {fileID: 1719983636}
   - component: {fileID: 1719983635}
   - component: {fileID: 1719983634}
+  - component: {fileID: 1719983638}
   m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
@@ -776,6 +807,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1719983638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719983633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54da616e7b51de74a96d9501cb828643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1e+10
+  hitEffect: {fileID: 100002, guid: 99c73c92ac40473459640b165473206f, type: 3}
 --- !u!1 &1746321302
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,6 +2031,7 @@ Transform:
   - {fileID: 2850227692649767301}
   - {fileID: 2262780318423993819}
   - {fileID: 4049178617987561883}
+  - {fileID: 1562906108}
   m_Father: {fileID: 963194228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2570,6 +2616,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 50
   damage: 10
+  maxAmmo: 12
+  fireRate: 7
+  reloadTime: 3
+  inaccuracyDistance: 5
+  rapidFire: 0
+  shotgun: 1
+  bulletsPerShot: 6
+  laser: {fileID: 7031656151899095210, guid: 6c649cc3c04e94242b23b333b2f16f1c, type: 3}
+  muzzle: {fileID: 1562906108}
+  fadeDuration: 0.3
 --- !u!1 &3205764644267362289
 GameObject:
   m_ObjectHideFlags: 0
